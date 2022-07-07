@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+body {
+  background: radial-gradient(ellipse at top, #0c9f98, transparent),
+            radial-gradient(ellipse at bottom, #eb8d8d, transparent);
+}
+main {
+  background: rgba(155, 202, 200, 0.2);
+  box-shadow: 10px 10px 17px -2px rgba(163, 163, 163, 0.55);
+  margin: 1rem;
+}
+header {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-block-start: 2rem;
+}
+nav {
+  margin-block: 2rem;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  background-color: rgb(244, 232, 232);
+  padding: 0.4rem 1.2rem;
+  border-radius: 10rem;
+  box-shadow: inset -0.2rem 0 0.1rem 0 #000000;
+}
+.acasa {
+  background-color: #eb8d8d;
+}
+ul {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+li {
+  list-style: none;
+  align-items: center;
+}
+.office-image {
+  margin: auto;
+  display: block;
+  width: 90%;
+  height: auto;
+}
+.first-section {
+  margin-inline-start: 1rem;
+}
+h1 {
+  margin-block: 2rem;
+}
+h3 {
+  font-weight: normal;
+  line-height: 1.2;
+}
+.contact-btn {
+  background-color: #eb8d8d;
+  display: flex;
+  justify-content: center;
+  width: 10rem;
+  padding-block: 0.5rem;
+  margin-block: 2rem;
+  border-radius: 20rem;
+  box-shadow: none;
+  cursor: pointer;
+}
+p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-family: Calibri;
+  letter-spacing: 0.1rem;
+  margin-inline-start: 1rem;
+}
+@media (min-width: 600px) {
+  header {
+    font-size: 3rem;
+  }
+  li {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  .contact-btn {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1.4rem;
+    margin-inline-start: 1.8rem;
+  }
+  .first-section {
+    margin-inline-start: 1.8rem;
+  }
+}
+@media (min-width: 780px) {
+  main {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 8% 2fr 2fr;
+    justify-items: start;
+  }
+  header {
+    margin-block-start: 1rem;
+    margin-inline-start: 1.8rem;
+  }
+  .first-section {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  p {
+    grid-column: 1 / 3;
+  }
+}
+@media (min-width: 900px) {
+  main {
+    row-gap: 1.5rem;
+  }
+}
+@media (min-width: 1240px) {
+  main {
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
